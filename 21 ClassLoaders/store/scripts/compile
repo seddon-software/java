@@ -1,0 +1,5 @@
+cd ../..
+javac store/myclasses/*.java
+javac -cp .;./store basic/tests/*.java
+
+ls -l store/myclasses

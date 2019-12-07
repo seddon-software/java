@@ -1,0 +1,58 @@
+<project name="ServletDemos" default="jar_up_files">
+  <property name="STAGE" value="temp"/>
+  <property name="build.compiler" value="modern"/>
+  <property name="DEPLOY"  value="C:\Oracle\Middleware\user_projects\domains\admin_domain\autodeploy" />
+  <property name="J2EE.LIB.servlets" value="C:\Oracle\Middleware\modules\javax.jsp_1.1.0.0_2-1.jar"/>
+  <property name="J2EE.LIB.jsps" value="C:\Oracle\Middleware\modules\javax.servlet_1.0.0.0_2-5.jar"/>
+
+  <target name="clean">
+    <echo message="cleaning up ..."/>
+    <delete dir="${STAGE}" />
+    <delete>
+  	  <fileset dir="." includes="*.war"/>
+  	</delete>
+  </target>
+
+
+  <target name="deploy"
+          depends="jar_up_files">
+    <copy todir="${DEPLOY}"
+          file="ServletDemos.war"/>
+  </target>
+
+
+  <target name="jar_up_files"
+          depends="compile">
+    <jar jarfile="ServletDemos.war"
+         basedir="${STAGE}"/>
+  </target>
+
+
+  <target name="compile"
+          depends="copy_files">
+    <javac srcdir="."
+    	   target="1.5"
+           destdir="${STAGE}/WEB-INF/classes"
+		   debug="on" debuglevel="lines,vars,source">
+      <classpath>
+   	    <pathelement path="${J2EE.LIB.servlets}"/>
+   	    <pathelement path="${J2EE.LIB.jsps}"/>
+      </classpath>
+    </javac>
+  </target>
+
+
+  <target name="copy_files">
+  	<delete dir="${STAGE}"/>
+    <mkdir dir="${STAGE}/WEB-INF"/>
+    <mkdir dir="${STAGE}/WEB-INF/classes"/>
+
+    <copy todir="${STAGE}/WEB-INF">
+      <fileset dir="WebContent/WEB-INF">
+        <include name="*.xml"/>
+      </fileset>
+    </copy>
+  </target>
+
+
+</project>

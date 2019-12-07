@@ -1,0 +1,6 @@
+cd ../..
+touch CompilingClassloader/MyClassA.java
+touch CompilingClassloader/MyClassB.java
+cd CompilingClassloader
+ls -l MyClassA.* MyClassB.*
+

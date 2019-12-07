@@ -1,0 +1,3 @@
+cd ../../store
+rm myclasses/*.class
+ls -l myclasses

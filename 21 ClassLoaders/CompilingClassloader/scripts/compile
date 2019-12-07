@@ -1,0 +1,9 @@
+cd ../..
+pwd
+javac CompilingClassloader/MyClassA.java
+javac CompilingClassloader/MyClassB.java
+javac store/myclasses/Class1.java
+javac store/myclasses/Class2.java
+cd CompilingClassloader
+ls -l *.class
+

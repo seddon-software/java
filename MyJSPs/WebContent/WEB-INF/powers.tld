@@ -1,0 +1,27 @@
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.1">
+
+	<tlibversion>1.0</tlibversion>
+	<jspversion>2.1</jspversion>
+	<uri>myTagLibrary</uri>
+
+	<info>
+		This taglib provides tags to calculate powers of integers
+	</info>
+
+	<tag>
+		<name>calculate</name>
+		<tagclass>tagLibraries.PowersHandler</tagclass>
+		<attribute>
+			<name>operation</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>number</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+</taglib>

@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////
+//
+//  Basic Classloader
+//
+////////////////////////////////////////////////////////////
+
+package basic;
+
+
+public class MyClassLoader1 extends MyClassLoader {
+  public MyClassLoader1(String theStore) {
+    super(theStore);
+  }
+}

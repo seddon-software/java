@@ -1,0 +1,8 @@
+total 48
+-rw-r--r--  1 seddon  staff   50 26 Aug 04:09 README
+-rwxr-xr-x  1 seddon  staff  202 26 Aug 03:52 compile
+-rwxr-xr-x  1 seddon  staff  125 26 Aug 03:53 delete-class-files
+-rwxr-xr-x  1 seddon  staff   54 25 Aug 21:54 run
+-rw-r--r--  1 seddon  staff  116 26 Aug 04:10 setup
+-rwxr-xr-x  1 seddon  staff  144 25 Aug 21:54 touch
+-rw-r--r--  1 seddon  staff    0 27 Aug 01:34 z

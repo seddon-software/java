@@ -1,0 +1,53 @@
+<body style="background-color: rgb(190, 220, 255); font-size: 125%;">
+	<h1>Abstract Classes and Interfaces</h1>
+
+	<b>Pre Java 8</b>
+	<br />
+	<ul>
+		<li>Interfaces - <em>no</em> methods or state implemented
+		</li>
+		<li>Abstract Classes - <em>some</em> methods or state implemented
+		</li>
+		<li>Concrete Classes - <em>all</em> methods and <em>all</em>
+			state implemented
+		</li>
+	</ul>
+
+	<b>Java 8</b>
+	<br />
+	<ul>
+		<li>Interfaces can now contain default method implementations
+			<ul>
+				<li>interfaces are supposed to be immutable</li>
+				<li>breaks the idea of pure contract ...</li>
+				<li>but allows changes to interface that don't break existing
+					code</li>
+				<li>needed because of the changes required by collection
+					classes to support lambdas and streams</li>
+			</ul>
+		</li>
+		<li>Multiple Inheritance now possible</li>
+		<ul>
+			<li>can inherit from <em>multiple</em> interfaces
+			</li>
+			<li>can inherit from only <em>one</em> abstract class
+			</li>
+		</ul>
+	</ul>
+
+	<b>Interfaces</b>
+	<br />
+	<ul>
+		<li>can contain abstract methods</li>
+		<li>can contain default methods that have an implementation</li>
+		<li>methods are inherently <em>public</em></li>
+		<li>fields are inherently <em>public, static, and final</em></li>
+	</ul>
+
+	<b>Abstract Classes</b>
+	<br />
+	<ul>
+		<li>state can be <em>non-static and non-final</em></li>
+		<li>methods can be <em>public, private, or protected</em></li>
+	</ul>
+</body>

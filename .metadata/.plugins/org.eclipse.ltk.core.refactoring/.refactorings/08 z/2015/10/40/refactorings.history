@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;collections.algorithms&apos; to &apos;08 Collections/src&apos;&#x0A;- Original project: &apos;08 z&apos;&#x0A;- Destination element: &apos;08 Collections/src&apos;&#x0A;- Original element: &apos;08 z/src/collections.algorithms&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=08 Collections/src" element1="/src&lt;collections.algorithms" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1443905883553" version="1.0"/>
+</session>

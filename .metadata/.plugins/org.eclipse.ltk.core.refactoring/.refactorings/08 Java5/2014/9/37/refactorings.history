@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;TypesafeEnums.Test&apos; to &apos;Demo&apos;&#x0A;- Original project: &apos;JSE5 New Features&apos;&#x0A;- Original element: &apos;TypesafeEnums.Test&apos;&#x0A;- Renamed element: &apos;TypesafeEnums.Demo&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Test&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/&lt;TypesafeEnums{Test.java[Test" matchStrategy="1" name="Demo" qualified="false" references="true" similarDeclarations="false" stamp="1410360163005" textual="false" version="1.0"/>
+</session>

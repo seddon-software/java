@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>MyJSPs</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<!-- Request Object -->
+  <servlet>
+    <servlet-name>RequestServlet</servlet-name>
+    <servlet-class>requestObject.RequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestServlet</servlet-name>
+    <url-pattern>/requestObject/request</url-pattern>
+  </servlet-mapping>
+
+	<!-- Error Pages -->
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/JSPs/errorPages/MySpecialErrorPage.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/JSPs/errorPages/MyErrorPage.jsp</location>
+	</error-page>
+
+	<!-- MVC -->
+	<servlet>
+		<servlet-name>FrontController</servlet-name>
+		<jsp-file>/JSPs/mvc/controllers/Front.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FrontController</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FootballController</servlet-name>
+		<jsp-file>/JSPs/mvc/controllers/Football.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FootballController</servlet-name>
+		<url-pattern>/mvc/football</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RugbyController</servlet-name>
+		<jsp-file>/JSPs/mvc/controllers/Rugby.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RugbyController</servlet-name>
+		<url-pattern>/mvc/rugby</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BarChartView</servlet-name>
+		<jsp-file>/JSPs/mvc/views/BarChartView.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BarChartView</servlet-name>
+		<url-pattern>/mvc/barChart</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TextView</servlet-name>
+		<jsp-file>/JSPs/mvc/views/TextView.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TextView</servlet-name>
+		<url-pattern>/mvc/text</url-pattern>
+	</servlet-mapping>
+
+	<!-- HttpListeners -->
+	<listener>
+		<listener-class>httpListeners.MyApplicationAttributeListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>httpListeners.MyApplicationListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>httpListeners.MySessionAttributeListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>httpListeners.MySessionListener</listener-class>
+	</listener>
+
+	<!-- ***** forms ***** -->
+	<servlet>
+		<servlet-name>Forms-Start</servlet-name>
+		<jsp-file>/JSPs/forms/start.jsp</jsp-file>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Forms-Page2</servlet-name>
+		<jsp-file>/JSPs/forms/page2.jsp</jsp-file>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Forms-Start</servlet-name>
+		<url-pattern>/forms/start</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Forms-Page2</servlet-name>
+		<url-pattern>/forms/page2</url-pattern>
+	</servlet-mapping>
+
+	<!-- ***** sessions ***** -->
+	<servlet>
+		<servlet-name>Sessions-MyServlet</servlet-name>
+		<servlet-class>sessions.MyServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Sessions-Page</servlet-name>
+		<jsp-file>/JSPs/sessions/index.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Sessions-MyServlet</servlet-name>
+		<url-pattern>/sessions/myservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Sessions-Page</servlet-name>
+		<url-pattern>/sessions/index</url-pattern>
+	</servlet-mapping>
+
+	<!-- ***** dispatching ***** -->
+	<servlet>
+		<servlet-name>Dispaching-Controller</servlet-name>
+		<jsp-file>/JSPs/dispatching/Controller.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Dispaching-Servlet1</servlet-name>
+		<servlet-class>dispatching.Servlet1</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Dispaching-Servlet2</servlet-name>
+		<servlet-class>dispatching.Servlet2</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Dispaching-JSP1</servlet-name>
+		<jsp-file>/JSPs/dispatching/JSP1.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Dispaching-JSP2</servlet-name>
+		<jsp-file>/JSPs/dispatching/JSP2.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Dispaching-Controller</servlet-name>
+		<url-pattern>/dispatching/controller</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Dispaching-Servlet1</servlet-name>
+		<url-pattern>/dispatching/servlets/page1</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Dispaching-Servlet2</servlet-name>
+		<url-pattern>/dispatching/servlets/page2</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Dispaching-JSP1</servlet-name>
+		<url-pattern>/dispatching/JSPs/page1</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Dispaching-JSP2</servlet-name>
+		<url-pattern>/dispatching/JSPs/page2</url-pattern>
+	</servlet-mapping>
+
+</web-app>

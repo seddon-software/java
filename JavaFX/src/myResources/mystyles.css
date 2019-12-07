@@ -1,0 +1,9 @@
+.custom-button {
+    -fx-font: 16px "Serif";
+    -fx-padding: 10;
+    -fx-background-color: #FF0000;
+     position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+}

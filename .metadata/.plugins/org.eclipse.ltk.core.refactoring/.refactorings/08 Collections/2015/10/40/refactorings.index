@@ -1,0 +1,14 @@
+1443905865723	Move package
+1443905938305	Move compilation units
+1443905966583	Copy package
+1443906024638	Copy packages
+1443906060462	Move compilation units
+1443906101185	Delete element
+1443906782815	Rename type 'FindMaxInCollection'
+1443907173562	Rename type 'Test'
+1443907206195	Rename type 'Test'
+1443907330144	Infer generic type arguments
+1443907669960	Rename type 'Test'
+1443907816344	Rename type 'TestHashSet'
+1443907898425	Rename type 'CreateHashSet'
+1443907914492	Rename type 'TestTreeSet'

@@ -1,0 +1,12 @@
+0    [main] WARN  mylogger  - Low fuel level.
+	 0    [main] DEBUG mylogger  - Starting search for nearest gas station.
+	 0    [main] WARN  mylogger  - Low fuel level.
+	 1815 [main] DEBUG mylogger  - Starting search for nearest gas station.
+	 0    [main] WARN  mylogger  - Low fuel level.
+	 457  [main] DEBUG mylogger  - Starting search for nearest gas station.
+	 0    [main] WARN  mylogger  - Low fuel level.
+	 1435 [main] DEBUG mylogger  - Starting search for nearest gas station.
+	 0    [main] WARN  mylogger  - Low fuel level.
+	 1    [main] DEBUG mylogger  - Starting search for nearest gas station.
+	 0    [main] WARN  mylogger  - Low fuel level.
+	 

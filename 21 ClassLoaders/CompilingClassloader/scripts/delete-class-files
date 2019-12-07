@@ -1,0 +1,5 @@
+cd ../..
+rm CompilingClassloader/MyClassA.class
+rm CompilingClassloader/MyClassB.class
+cd CompilingClassloader
+ls -l *.class
