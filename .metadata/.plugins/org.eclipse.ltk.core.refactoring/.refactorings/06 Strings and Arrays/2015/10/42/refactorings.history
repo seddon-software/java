@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;strings.CommandLine&apos; to &apos;CommandLineArgs&apos;&#x0A;- Original project: &apos;06 Strings and Arrays&apos;&#x0A;- Original element: &apos;strings.CommandLine&apos;&#x0A;- Renamed element: &apos;strings.CommandLineArgs&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CommandLine&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;strings{CommandLine.java[CommandLine" matchStrategy="1" name="CommandLineArgs" qualified="false" references="true" similarDeclarations="false" stamp="1445183241339" textual="false" version="1.0"/>
-</session>
